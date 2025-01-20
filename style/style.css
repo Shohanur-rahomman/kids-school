@@ -54,6 +54,14 @@
 #nav-icon{
     display: none;
 }
+#marquee-title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.line{
+    display: none;
+}
 /* navbar end */
 /* banner start */
 .banner-container{
@@ -82,10 +90,14 @@
     border-radius: 12px;
     font-weight: 600;
 }
+.banner-img{
+    width: 100%;
+}
 /* banner end */
 
 /* responsive section */
 @media screen and (max-width: 576px) {
+    /* nav start */
     .nav-logo > h2,
     .nav-btn,
     .nav-items{
@@ -98,7 +110,26 @@
     #nav-icon{
         font-size: 3rem;
         display: block;
-    
     }
+    .line{
+        display: block;
+        color: orange;
+        margin-top: 8px;
+    }
+    /* nav end */
+    /* banner start */
+    .banner-container{
+        flex-direction: column-reverse;
+        margin-left: 16px;
+        margin-right: 17px;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 32px;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
+    /* banner end */
 }
 /* responsive section */
