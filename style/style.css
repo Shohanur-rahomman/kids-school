@@ -9,15 +9,17 @@
     box-sizing: border-box;
 }
 /* sherd */
-.hidden-item{
-    display: none;
+.arrow{
+    background-color: orange;
+    padding: 17px 22px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #FFFFFF;
 }
 /* sherd */
 
 /* header */
-#header-container{
-    
-}
+
 /* header */
 
 /* navbar start */
@@ -93,7 +95,71 @@
 .banner-img{
     width: 100%;
 }
-/* banner end */
+/* banner end *
+/* cart start */
+.cart-container{
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 60px;
+    text-align: center;
+}
+.cart-container-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+}
+.cart-title{
+    font-size: 1.5rem;
+    color: #202020;
+    margin-top: 44px;
+    margin-bottom: 33px;
+}
+.cart{
+    width: 368px;
+    height: 476px;
+    padding: 50px 40px;
+    border-radius: 18px;
+    background-image: linear-gradient(#DEF5FF,#FFFFFF);
+    border-left: 1px solid #DEF5FF;
+    border-right: 1px solid #DEF5FF;
+    border-bottom: 1px solid #DEF5FF;
+}
+.cart-2{
+    width: 368px;
+    height: 476px;
+    padding: 50px 40px;
+    border-radius: 18px;
+    background-image: linear-gradient(#FFF4DC,#FFFFFF);
+    border-left: 1px solid #FFF4DC;
+    border-right: 1px solid #FFF4DC;
+    border-bottom: 1px solid #FFF4DC;
+}
+.cart-3{
+    width: 368px;
+    height: 476px;
+    padding: 50px 40px;
+    border-radius: 18px;
+    background-image: linear-gradient(#EEE1FF,#FFFFFF);
+    border-left: 1px solid #EEE1FF;
+    border-right: 1px solid #EEE1FF;
+    border-bottom: 1px solid #EEE1FF;
+}
+.cart-sub-container{
+    display: flex;
+    gap: 28px;
+    margin: 0 auto;
+}
+.cart-description{
+    font-size: 1rem;
+    color: #808080;
+    margin-bottom: 33px; 
+}
+
+
+/* cart end */
 
 /* responsive section */
 @media screen and (max-width: 576px) {
@@ -131,5 +197,29 @@
         font-size: 14px;
     }
     /* banner end */
+    /* cart start */
+    .cart-container{
+        background-image: url('../assets/bg.png');
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .cart-sub-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .cart-container-title{
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .arrow-container{
+        display: none;
+    }
+    /* cart end */
 }
 /* responsive section */
