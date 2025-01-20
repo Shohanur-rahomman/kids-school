@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.normal-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* sherd */
+.hidden-item{
+    display: none;
+}
+/* sherd */
+
+/* header */
+#header-container{
+    
+}
+/* header */
+
+/* navbar start */
+.navbar{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.nav-logo > h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-btn{
+    background-color: orange;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+#nav-icon{
+    display: none;
+}
+/* navbar end */
+/* banner start */
+.banner-container{
+    max-width: 1158px;
+    margin: 0 auto;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.banner-title{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.banner-description{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 47px;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+/* banner end */
+
+/* responsive section */
+@media screen and (max-width: 576px) {
+    .nav-logo > h2,
+    .nav-btn,
+    .nav-items{
+        display: none;
+    }
+    .navbar{
+        width: 80vw;
+        margin-top: 12px;
+    }
+    #nav-icon{
+        font-size: 3rem;
+        display: block;
+    
+    }
+}
+/* responsive section */
